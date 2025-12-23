@@ -8,7 +8,7 @@
 
 # Ignore les dossiers de données
 data/
-artifacts/
+# artifacts/    <-- Commentez cette ligne avec #
 models/
 
 # Ignore les fichiers temporaires Python
