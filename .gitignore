@@ -1,0 +1,18 @@
+# Ignore les modèles lourds
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.h5
+*.ckpt
+
+# Ignore les dossiers de données
+data/
+artifacts/
+models/
+
+# Ignore les fichiers temporaires Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

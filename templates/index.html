@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Palette de couleurs professionnelle */
+            --primary-color: #2563eb; /* Bleu royal */
+            --primary-hover: #1d4ed8;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #111827;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --success-bg: #ecfdf5;
+            --success-text: #047857;
+            --error-bg: #fef2f2;
+            --error-text: #b91c1c;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Barre de navigation simple */
+        nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+        }
+
+        .brand-name {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--text-main);
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .header-section {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Carte principale */
+        .main-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            padding: 32px;
+        }
+
+        /* Alertes */
+        .alert {
+            padding: 16px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert-error {
+            background-color: var(--error-bg);
+            color: var(--error-text);
+            border: 1px solid #fecaca;
+        }
+
+        .alert-success {
+            background-color: var(--success-bg);
+            color: var(--success-text);
+            border: 1px solid #a7f3d0;
+        }
+
+        /* Formulaire */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            background-color: #fff;
+            transition: all 0.2s;
+            resize: vertical;
+            min-height: 200px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        textarea::placeholder {
+            color: #9ca3af;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Section Résultats */
+        .result-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .result-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .result-box {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+            padding: 20px;
+            color: #334155;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        /* Statistiques */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-color);
+            background: white;
+            margin-top: auto;
+        }
+
+        /* Icônes SVG */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 15px; margin: 20px auto; }
+            .main-card { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span class="brand-name">AI Summary</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Générateur de Résumé</h1>
+            <p class="subtitle">Traitez vos dialogues et obtenez une synthèse instantanée grâce à l'IA.</p>
+        </div>
+
+        <div class="main-card">
+            
+            {% if error %}
+            <div class="alert alert-error">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <form method="POST" action="/summarize">
+                <div class="form-group">
+                    <label for="text">Texte source</label>
+                    <textarea 
+                        id="text" 
+                        name="text" 
+                        placeholder="Collez le texte ou le dialogue à résumer ici..."
+                        required
+                    >{{ input_text if input_text else '' }}</textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    Générer le résumé
+                </button>
+            </form>
+
+            {% if summary %}
+            <div class="result-section">
+                <div class="result-header">
+                    <svg class="icon" style="color: var(--primary-color);" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <h2>Résultat</h2>
+                </div>
+                
+                <div class="result-box">
+                    {{ summary }}
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">{{ input_length }}</span>
+                        <span class="stat-label">Mots (Source)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">{{ summary_length }}</span>
+                        <span class="stat-label">Mots (Résumé)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">{{ "%.0f"|format((1 - summary_length/input_length) * 100) }}%</span>
+                        <span class="stat-label">Réduction</span>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pegasus AI System. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

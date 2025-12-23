@@ -1,0 +1,1739 @@
+[2025-12-21 01:51:53,018: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 01:53:22,931: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 01:53:33,911: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 01:54:16,672: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 01:54:27,559: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 01:58:18,885: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 01:58:30,523: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 01:59:28,454: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 01:59:39,776: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:01:20,784: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:01:31,934: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:01:32,886: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:01:32,920: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:01:32,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:01:32,924: INFO: common: created directory at: artifacts]
+[2025-12-21 02:01:32,925: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:01:35,446: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: EBC3:308DA4:125D50B:14EE5A0:694746EB
+Accept-Ranges: bytes
+Date: Sun, 21 Dec 2025 01:01:33 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200094-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1766278893.710288,VS0,VE389
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bd2261e11539d07d40ff9e04da38d63a25cc338b
+Expires: Sun, 21 Dec 2025 01:06:33 GMT
+Source-Age: 0
+
+]
+[2025-12-21 02:01:35,680: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:01:35,681: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:01:35,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:01:35,688: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:01:35,689: INFO: common: created directory at: artifacts]
+[2025-12-21 02:01:35,690: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:01:35,696: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:01:35,697: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:01:35,705: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:01:35,708: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:01:35,709: INFO: common: created directory at: artifacts]
+[2025-12-21 02:01:35,710: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:01:46,371: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:01:46,372: INFO: main: *******************]
+[2025-12-21 02:01:46,372: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:01:46,376: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:01:46,379: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:01:46,379: INFO: common: created directory at: artifacts]
+[2025-12-21 02:01:46,380: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:01:48,907: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`]
+[2025-12-21 02:05:04,378: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`]
+[2025-12-21 02:05:08,746: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-12-21 02:10:52,572: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:10:57,485: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:10:57,937: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:10:57,939: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:10:57,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:10:57,941: INFO: common: created directory at: artifacts]
+[2025-12-21 02:10:57,941: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:10:57,942: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:10:58,024: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:10:58,024: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:10:58,026: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:10:58,027: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:10:58,027: INFO: common: created directory at: artifacts]
+[2025-12-21 02:10:58,028: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:10:58,029: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:10:58,029: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:10:58,031: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:10:58,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:10:58,032: INFO: common: created directory at: artifacts]
+[2025-12-21 02:10:58,032: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:10:59,958: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:10:59,959: INFO: main: *******************]
+[2025-12-21 02:10:59,959: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:10:59,961: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:10:59,962: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:10:59,962: INFO: common: created directory at: artifacts]
+[2025-12-21 02:10:59,962: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:11:07,127: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-12-21 02:12:06,966: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:12:12,443: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:12:12,890: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:12:12,892: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:12:12,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:12:12,894: INFO: common: created directory at: artifacts]
+[2025-12-21 02:12:12,894: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:12:12,894: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:12:12,979: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:12:12,979: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:12:12,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:12:12,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:12:12,982: INFO: common: created directory at: artifacts]
+[2025-12-21 02:12:12,982: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:12:12,983: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:12:12,984: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:12:12,985: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:12:12,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:12:12,986: INFO: common: created directory at: artifacts]
+[2025-12-21 02:12:12,986: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:12:14,930: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:12:14,930: INFO: main: *******************]
+[2025-12-21 02:12:14,930: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:12:14,932: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:12:14,933: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:12:14,933: INFO: common: created directory at: artifacts]
+[2025-12-21 02:12:14,933: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:12:21,647: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-12-21 02:13:58,932: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:14:03,159: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:14:03,492: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:14:03,493: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:14:03,495: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:14:03,495: INFO: common: created directory at: artifacts]
+[2025-12-21 02:14:03,495: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:14:03,495: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:14:03,580: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:14:03,580: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:14:03,582: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:14:03,583: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:14:03,584: INFO: common: created directory at: artifacts]
+[2025-12-21 02:14:03,584: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:14:03,585: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:14:03,585: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:14:03,587: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:14:03,588: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:14:03,588: INFO: common: created directory at: artifacts]
+[2025-12-21 02:14:03,589: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:14:05,127: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:14:05,127: INFO: main: *******************]
+[2025-12-21 02:14:05,127: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:14:05,129: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:14:05,130: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:14:05,131: INFO: common: created directory at: artifacts]
+[2025-12-21 02:14:05,131: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:14:11,921: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-12-21 02:16:31,932: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:16:36,198: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:16:36,540: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:16:36,542: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:16:36,543: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:16:36,544: INFO: common: created directory at: artifacts]
+[2025-12-21 02:16:36,544: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:16:36,544: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:16:36,631: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:16:36,631: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:16:36,633: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:16:36,634: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:16:36,634: INFO: common: created directory at: artifacts]
+[2025-12-21 02:16:36,635: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:16:36,636: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:16:36,636: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:16:36,638: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:16:36,639: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:16:36,639: INFO: common: created directory at: artifacts]
+[2025-12-21 02:16:36,639: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:16:38,164: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:16:38,164: INFO: main: *******************]
+[2025-12-21 02:16:38,164: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:16:38,166: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:16:38,167: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:16:38,167: INFO: common: created directory at: artifacts]
+[2025-12-21 02:16:38,167: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:16:45,015: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`]
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 51, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+  File "<string>", line 135, in __init__
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\training_args.py", line 1811, in __post_init__
+    self.device
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\training_args.py", line 2355, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\training_args.py", line 2225, in _setup_devices
+    raise ImportError(
+    ...<2 lines>...
+    )
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+[2025-12-21 02:17:48,894: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:17:53,751: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:17:54,169: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:17:54,171: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:17:54,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:17:54,172: INFO: common: created directory at: artifacts]
+[2025-12-21 02:17:54,172: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:17:54,173: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:17:54,258: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:17:54,258: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:17:54,260: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:17:54,261: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:17:54,261: INFO: common: created directory at: artifacts]
+[2025-12-21 02:17:54,262: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:17:54,263: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:17:54,263: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:17:54,265: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:17:54,266: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:17:54,266: INFO: common: created directory at: artifacts]
+[2025-12-21 02:17:54,266: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:17:56,032: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:17:56,032: INFO: main: *******************]
+[2025-12-21 02:17:56,032: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:17:56,034: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:17:56,035: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:17:56,036: INFO: common: created directory at: artifacts]
+[2025-12-21 02:17:56,036: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:35:33,263: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:35:39,248: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:35:39,776: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:35:39,779: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:35:39,780: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:35:39,780: INFO: common: created directory at: artifacts]
+[2025-12-21 02:35:39,781: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:35:39,781: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:35:39,865: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:35:39,865: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:35:39,867: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:35:39,868: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:35:39,868: INFO: common: created directory at: artifacts]
+[2025-12-21 02:35:39,869: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:35:39,870: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:35:39,870: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:35:39,872: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:35:39,873: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:35:39,873: INFO: common: created directory at: artifacts]
+[2025-12-21 02:35:39,873: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:35:41,810: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:35:41,810: INFO: main: *******************]
+[2025-12-21 02:35:41,810: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:35:41,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:35:41,813: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:35:41,814: INFO: common: created directory at: artifacts]
+[2025-12-21 02:35:41,814: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 02:46:44,449: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 02:46:50,444: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 02:46:50,989: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 02:46:50,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:46:50,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:46:50,993: INFO: common: created directory at: artifacts]
+[2025-12-21 02:46:50,994: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 02:46:50,994: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 02:46:51,082: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:46:51,082: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 02:46:51,084: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:46:51,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:46:51,085: INFO: common: created directory at: artifacts]
+[2025-12-21 02:46:51,085: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 02:46:51,087: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:46:51,087: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 02:46:51,088: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:46:51,089: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:46:51,089: INFO: common: created directory at: artifacts]
+[2025-12-21 02:46:51,090: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 02:46:52,999: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 02:46:52,999: INFO: main: *******************]
+[2025-12-21 02:46:52,999: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 02:46:53,001: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 02:46:53,002: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 02:46:53,003: INFO: common: created directory at: artifacts]
+[2025-12-21 02:46:53,003: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 08:50:08,140: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 08:50:19,424: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 08:50:20,084: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 08:50:20,087: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 08:50:20,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 08:50:20,088: INFO: common: created directory at: artifacts]
+[2025-12-21 08:50:20,088: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 08:50:20,089: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 08:50:20,187: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 08:50:20,188: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 08:50:20,189: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 08:50:20,190: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 08:50:20,190: INFO: common: created directory at: artifacts]
+[2025-12-21 08:50:20,190: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 08:50:20,192: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 08:50:20,192: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 08:50:20,194: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 08:50:20,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 08:50:20,195: INFO: common: created directory at: artifacts]
+[2025-12-21 08:50:20,195: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 08:50:22,249: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 08:50:22,249: INFO: main: *******************]
+[2025-12-21 08:50:22,249: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 08:50:22,251: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 08:50:22,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 08:50:22,252: INFO: common: created directory at: artifacts]
+[2025-12-21 08:50:22,253: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 13:49:18,075: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:49:18,081: INFO: main: *******************]
+[2025-12-21 13:49:18,082: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 13:49:18,110: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:49:18,125: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:49:18,126: INFO: common: created directory at: artifacts]
+[2025-12-21 13:49:18,127: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 13:49:25,979: ERROR: main: To be able to use evaluate-metric/rouge, you need to install the following dependencies['nltk', 'rouge_score'] using 'pip install nltk rouge_score' for instance']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 65, in <module>
+    model_evaluation.main()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_evaluation.py", line 71, in evaluate
+    rouge_metric = load_metric('rouge')
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\evaluate\loading.py", line 748, in load
+    evaluation_module = evaluation_module_factory(
+        path, module_type=module_type, revision=revision, download_config=download_config, download_mode=download_mode
+    )
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\evaluate\loading.py", line 680, in evaluation_module_factory
+    raise e1 from None
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\evaluate\loading.py", line 639, in evaluation_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\evaluate\loading.py", line 489, in get_module
+    local_imports = _download_additional_modules(
+        name=self.name,
+    ...<2 lines>...
+        download_config=self.download_config,
+    )
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\evaluate\loading.py", line 265, in _download_additional_modules
+    raise ImportError(
+    ...<3 lines>...
+    )
+ImportError: To be able to use evaluate-metric/rouge, you need to install the following dependencies['nltk', 'rouge_score'] using 'pip install nltk rouge_score' for instance'
+[2025-12-21 13:51:56,946: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 13:52:08,772: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 13:52:09,380: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 13:52:09,382: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:52:09,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:52:09,383: INFO: common: created directory at: artifacts]
+[2025-12-21 13:52:09,384: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 13:52:09,384: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 13:52:09,496: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:52:09,496: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 13:52:09,498: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:52:09,499: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:52:09,500: INFO: common: created directory at: artifacts]
+[2025-12-21 13:52:09,500: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 13:52:09,501: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:52:09,501: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 13:52:09,503: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:52:09,504: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:52:09,504: INFO: common: created directory at: artifacts]
+[2025-12-21 13:52:09,505: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 13:52:11,547: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:52:11,548: INFO: main: *******************]
+[2025-12-21 13:52:11,548: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 13:52:11,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:52:11,551: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:52:11,551: INFO: common: created directory at: artifacts]
+[2025-12-21 13:52:11,552: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 13:52:11,552: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:52:11,552: INFO: main: *******************]
+[2025-12-21 13:52:11,553: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 13:52:11,554: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:52:11,555: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:52:11,555: INFO: common: created directory at: artifacts]
+[2025-12-21 13:52:11,555: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 13:52:27,858: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 13:52:27,958: ERROR: main: 'numpy.float64' object has no attribute 'mid']
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 65, in <module>
+    model_evaluation.main()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_evaluation.py", line 77, in evaluate
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_evaluation.py", line 77, in <genexpr>
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+                           ^^^^^^^^^^^^^
+AttributeError: 'numpy.float64' object has no attribute 'mid'. Did you mean: 'min'?
+[2025-12-21 13:55:03,893: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 13:55:08,070: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 13:55:08,451: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 13:55:08,453: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:55:08,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:55:08,454: INFO: common: created directory at: artifacts]
+[2025-12-21 13:55:08,454: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 13:55:08,454: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 13:55:08,535: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:55:08,535: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 13:55:08,537: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:55:08,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:55:08,538: INFO: common: created directory at: artifacts]
+[2025-12-21 13:55:08,538: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 13:55:08,540: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:55:08,540: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 13:55:08,542: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:55:08,542: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:55:08,543: INFO: common: created directory at: artifacts]
+[2025-12-21 13:55:08,543: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 13:55:10,279: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:55:10,280: INFO: main: *******************]
+[2025-12-21 13:55:10,280: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 13:55:10,282: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:55:10,283: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:55:10,283: INFO: common: created directory at: artifacts]
+[2025-12-21 13:55:10,283: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 13:55:10,284: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 13:55:10,284: INFO: main: *******************]
+[2025-12-21 13:55:10,284: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 13:55:10,286: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 13:55:10,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 13:55:10,287: INFO: common: created directory at: artifacts]
+[2025-12-21 13:55:10,287: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 13:55:26,083: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 13:55:26,206: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:01:46,155: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 14:01:51,267: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 14:01:51,682: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 14:01:51,684: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:01:51,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:01:51,686: INFO: common: created directory at: artifacts]
+[2025-12-21 14:01:51,686: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 14:01:51,686: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 14:01:51,772: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:01:51,773: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 14:01:51,774: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:01:51,776: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:01:51,776: INFO: common: created directory at: artifacts]
+[2025-12-21 14:01:51,776: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 14:01:51,778: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:01:51,778: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 14:01:51,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:01:51,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:01:51,782: INFO: common: created directory at: artifacts]
+[2025-12-21 14:01:51,782: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 14:01:53,904: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:01:53,905: INFO: main: *******************]
+[2025-12-21 14:01:53,905: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 14:01:53,907: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:01:53,908: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:01:53,909: INFO: common: created directory at: artifacts]
+[2025-12-21 14:01:53,909: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 14:01:53,909: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:01:53,910: INFO: main: *******************]
+[2025-12-21 14:01:53,910: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 14:01:53,911: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:01:53,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:01:53,913: INFO: common: created directory at: artifacts]
+[2025-12-21 14:01:53,914: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 14:13:01,170: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 14:13:05,523: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 14:13:06,046: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 14:13:06,049: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:13:06,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:13:06,050: INFO: common: created directory at: artifacts]
+[2025-12-21 14:13:06,050: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 14:13:06,051: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 14:13:06,135: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:13:06,136: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 14:13:06,137: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:13:06,138: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:13:06,138: INFO: common: created directory at: artifacts]
+[2025-12-21 14:13:06,139: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 14:13:06,140: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:13:06,140: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 14:13:06,142: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:13:06,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:13:06,143: INFO: common: created directory at: artifacts]
+[2025-12-21 14:13:06,143: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 14:13:07,893: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:13:07,893: INFO: main: *******************]
+[2025-12-21 14:13:07,893: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 14:13:07,895: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:13:07,896: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:13:07,897: INFO: common: created directory at: artifacts]
+[2025-12-21 14:13:07,897: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 14:13:07,897: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:13:07,898: INFO: main: *******************]
+[2025-12-21 14:13:07,898: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 14:13:07,899: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:13:07,903: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:13:07,904: INFO: common: created directory at: artifacts]
+[2025-12-21 14:13:07,904: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 14:17:19,651: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 14:17:25,556: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 14:17:27,575: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 14:17:27,578: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:17:27,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:17:27,579: INFO: common: created directory at: artifacts]
+[2025-12-21 14:17:27,579: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 14:17:27,579: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 14:17:27,664: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:17:27,664: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 14:17:27,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:17:27,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:17:27,667: INFO: common: created directory at: artifacts]
+[2025-12-21 14:17:27,667: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 14:17:27,669: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:17:27,669: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 14:17:27,670: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:17:27,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:17:27,672: INFO: common: created directory at: artifacts]
+[2025-12-21 14:17:27,672: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 14:17:29,459: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:17:29,459: INFO: main: *******************]
+[2025-12-21 14:17:29,459: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 14:17:29,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:17:29,462: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:17:29,462: INFO: common: created directory at: artifacts]
+[2025-12-21 14:17:29,463: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 14:17:29,463: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 14:17:29,464: INFO: main: *******************]
+[2025-12-21 14:17:29,464: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 14:17:29,465: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 14:17:29,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 14:17:29,467: INFO: common: created directory at: artifacts]
+[2025-12-21 14:17:29,467: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 14:49:06,281: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 14:49:06,484: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:36:03,030: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 15:36:07,831: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 15:36:08,431: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 15:36:08,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:36:08,435: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:36:08,435: INFO: common: created directory at: artifacts]
+[2025-12-21 15:36:08,435: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 15:36:08,435: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 15:36:08,522: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:36:08,522: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 15:36:08,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:36:08,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:36:08,526: INFO: common: created directory at: artifacts]
+[2025-12-21 15:36:08,526: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 15:36:08,527: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:36:08,528: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 15:36:08,529: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:36:08,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:36:08,531: INFO: common: created directory at: artifacts]
+[2025-12-21 15:36:08,531: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 15:36:17,611: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:36:17,611: INFO: main: *******************]
+[2025-12-21 15:36:17,611: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 15:36:17,613: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:36:17,614: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:36:17,615: INFO: common: created directory at: artifacts]
+[2025-12-21 15:36:17,615: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 15:36:17,615: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:36:17,615: INFO: main: *******************]
+[2025-12-21 15:36:17,615: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 15:36:17,617: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:36:17,618: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:36:17,618: INFO: common: created directory at: artifacts]
+[2025-12-21 15:36:17,619: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 15:49:53,883: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 15:50:00,663: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 15:50:01,239: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 15:50:01,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:50:01,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:50:01,243: INFO: common: created directory at: artifacts]
+[2025-12-21 15:50:01,244: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 15:50:01,244: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 15:50:01,346: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:50:01,346: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 15:50:01,348: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:50:01,350: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:50:01,350: INFO: common: created directory at: artifacts]
+[2025-12-21 15:50:01,350: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 15:50:01,352: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:50:01,352: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 15:50:01,354: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:50:01,355: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:50:01,355: INFO: common: created directory at: artifacts]
+[2025-12-21 15:50:01,355: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 15:50:03,878: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:50:03,878: INFO: main: *******************]
+[2025-12-21 15:50:03,878: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 15:50:03,880: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:50:03,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:50:03,882: INFO: common: created directory at: artifacts]
+[2025-12-21 15:50:03,882: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 15:50:03,883: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:50:03,883: INFO: main: *******************]
+[2025-12-21 15:50:03,883: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 15:50:03,885: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:50:03,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:50:03,886: INFO: common: created directory at: artifacts]
+[2025-12-21 15:50:03,887: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 15:50:30,448: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 15:50:30,578: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:56:00,465: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 15:56:04,929: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 15:56:05,328: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 15:56:05,330: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:56:05,331: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:56:05,331: INFO: common: created directory at: artifacts]
+[2025-12-21 15:56:05,332: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 15:56:05,332: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 15:56:05,417: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:56:05,417: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 15:56:05,419: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:56:05,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:56:05,421: INFO: common: created directory at: artifacts]
+[2025-12-21 15:56:05,421: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 15:56:05,423: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:56:05,423: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 15:56:05,425: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:56:05,426: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:56:05,426: INFO: common: created directory at: artifacts]
+[2025-12-21 15:56:05,426: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 15:56:07,494: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:56:07,494: INFO: main: *******************]
+[2025-12-21 15:56:07,494: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 15:56:07,496: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:56:07,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:56:07,498: INFO: common: created directory at: artifacts]
+[2025-12-21 15:56:07,498: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 15:56:07,499: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 15:56:07,499: INFO: main: *******************]
+[2025-12-21 15:56:07,499: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 15:56:07,500: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 15:56:07,501: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 15:56:07,502: INFO: common: created directory at: artifacts]
+[2025-12-21 15:56:07,502: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 15:56:30,286: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 15:56:30,402: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:02:51,946: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:02:56,335: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:02:56,727: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:02:56,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:02:56,730: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:02:56,730: INFO: common: created directory at: artifacts]
+[2025-12-21 16:02:56,730: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:02:56,731: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:02:56,814: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:02:56,815: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:02:56,816: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:02:56,817: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:02:56,817: INFO: common: created directory at: artifacts]
+[2025-12-21 16:02:56,818: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:02:56,819: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:02:56,819: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:02:56,821: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:02:56,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:02:56,822: INFO: common: created directory at: artifacts]
+[2025-12-21 16:02:56,822: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:02:58,890: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:02:58,890: INFO: main: *******************]
+[2025-12-21 16:02:58,890: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:02:58,892: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:02:58,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:02:58,893: INFO: common: created directory at: artifacts]
+[2025-12-21 16:02:58,894: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:02:58,894: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:02:58,894: INFO: main: *******************]
+[2025-12-21 16:02:58,894: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:02:58,896: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:02:58,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:02:58,897: INFO: common: created directory at: artifacts]
+[2025-12-21 16:02:58,897: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:03:22,023: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 16:03:22,138: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:04:42,972: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:04:47,781: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:04:48,240: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:04:48,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:04:48,244: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:04:48,244: INFO: common: created directory at: artifacts]
+[2025-12-21 16:04:48,244: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:04:48,245: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:04:48,333: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:04:48,333: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:04:48,335: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:04:48,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:04:48,336: INFO: common: created directory at: artifacts]
+[2025-12-21 16:04:48,337: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:04:48,339: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:04:48,339: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:04:48,341: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:04:48,342: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:04:48,342: INFO: common: created directory at: artifacts]
+[2025-12-21 16:04:48,342: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:04:50,526: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:04:50,527: INFO: main: *******************]
+[2025-12-21 16:04:50,527: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:04:50,529: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:04:50,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:04:50,530: INFO: common: created directory at: artifacts]
+[2025-12-21 16:04:50,531: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:04:50,531: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:04:50,531: INFO: main: *******************]
+[2025-12-21 16:04:50,531: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:04:50,533: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:04:50,534: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:04:50,535: INFO: common: created directory at: artifacts]
+[2025-12-21 16:04:50,535: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:05:13,722: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 16:05:13,836: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:09:08,287: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:09:12,648: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:09:13,031: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:09:13,033: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:09:13,034: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:09:13,035: INFO: common: created directory at: artifacts]
+[2025-12-21 16:09:13,035: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:09:13,035: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:09:13,122: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:09:13,122: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:09:13,124: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:09:13,125: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:09:13,125: INFO: common: created directory at: artifacts]
+[2025-12-21 16:09:13,125: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:09:13,127: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:09:13,127: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:09:13,129: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:09:13,130: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:09:13,130: INFO: common: created directory at: artifacts]
+[2025-12-21 16:09:13,130: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:09:14,965: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:09:14,965: INFO: main: *******************]
+[2025-12-21 16:09:14,965: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:09:14,967: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:09:14,968: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:09:14,969: INFO: common: created directory at: artifacts]
+[2025-12-21 16:09:14,969: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:09:14,969: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:09:14,969: INFO: main: *******************]
+[2025-12-21 16:09:14,969: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:09:14,971: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:09:14,972: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:09:14,972: INFO: common: created directory at: artifacts]
+[2025-12-21 16:09:14,973: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:09:14,975: ERROR: main: not a string]
+Traceback (most recent call last):
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\main.py", line 65, in <module>
+    model_evaluation.main()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\src\textSummarizer\conponents\model_evaluation.py", line 91, in evaluate
+    tokenizer = AutoTokenizer.from_pretrained(self.config.model_path)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\models\auto\tokenization_auto.py", line 1175, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\tokenization_utils_base.py", line 2113, in from_pretrained
+    return cls._from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~^
+        resolved_vocab_files,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\tokenization_utils_base.py", line 2151, in _from_pretrained
+    slow_tokenizer = (cls.slow_tokenizer_class)._from_pretrained(
+        copy.deepcopy(resolved_vocab_files),
+    ...<7 lines>...
+        **(copy.deepcopy(kwargs)),
+    )
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\tokenization_utils_base.py", line 2359, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\transformers\models\pegasus\tokenization_pegasus.py", line 144, in __init__
+    self.sp_model.Load(vocab_file)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\sentencepiece\__init__.py", line 961, in Load
+    return self.LoadFromFile(model_file)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\sentencepiece\__init__.py", line 316, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: not a string
+[2025-12-21 16:10:39,552: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:10:43,848: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:10:44,245: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:10:44,247: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:10:44,249: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:10:44,249: INFO: common: created directory at: artifacts]
+[2025-12-21 16:10:44,249: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:10:44,250: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:10:44,332: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:10:44,332: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:10:44,334: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:10:44,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:10:44,335: INFO: common: created directory at: artifacts]
+[2025-12-21 16:10:44,336: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:10:44,337: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:10:44,337: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:10:44,339: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:10:44,340: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:10:44,340: INFO: common: created directory at: artifacts]
+[2025-12-21 16:10:44,341: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:10:46,343: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:10:46,343: INFO: main: *******************]
+[2025-12-21 16:10:46,343: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:10:46,345: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:10:46,346: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:10:46,346: INFO: common: created directory at: artifacts]
+[2025-12-21 16:10:46,346: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:10:46,347: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:10:46,347: INFO: main: *******************]
+[2025-12-21 16:10:46,347: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:10:46,348: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:10:46,350: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:10:46,350: INFO: common: created directory at: artifacts]
+[2025-12-21 16:10:46,350: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:11:09,356: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 16:11:09,457: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:20:19,422: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:20:23,848: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:20:24,226: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:20:24,228: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:20:24,229: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:20:24,229: INFO: common: created directory at: artifacts]
+[2025-12-21 16:20:24,230: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:20:24,230: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:20:24,315: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:20:24,315: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:20:24,317: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:20:24,318: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:20:24,318: INFO: common: created directory at: artifacts]
+[2025-12-21 16:20:24,319: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:20:24,320: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:20:24,320: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:20:24,322: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:20:24,323: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:20:24,323: INFO: common: created directory at: artifacts]
+[2025-12-21 16:20:24,324: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:20:26,439: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:20:26,440: INFO: main: *******************]
+[2025-12-21 16:20:26,440: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:20:26,442: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:20:26,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:20:26,443: INFO: common: created directory at: artifacts]
+[2025-12-21 16:20:26,443: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:20:26,444: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:20:26,444: INFO: main: *******************]
+[2025-12-21 16:20:26,444: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:20:26,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:20:26,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:20:26,447: INFO: common: created directory at: artifacts]
+[2025-12-21 16:20:26,447: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:20:49,664: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 16:20:49,764: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:32:09,919: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 16:32:15,311: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 16:32:15,801: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 16:32:15,804: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:32:15,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:32:15,805: INFO: common: created directory at: artifacts]
+[2025-12-21 16:32:15,805: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 16:32:15,806: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 16:32:15,896: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:32:15,896: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 16:32:15,898: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:32:15,899: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:32:15,899: INFO: common: created directory at: artifacts]
+[2025-12-21 16:32:15,900: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 16:32:15,901: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:32:15,901: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 16:32:15,903: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:32:15,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:32:15,904: INFO: common: created directory at: artifacts]
+[2025-12-21 16:32:15,904: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 16:32:18,253: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:32:18,253: INFO: main: *******************]
+[2025-12-21 16:32:18,253: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 16:32:18,255: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:32:18,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:32:18,257: INFO: common: created directory at: artifacts]
+[2025-12-21 16:32:18,257: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 16:32:18,257: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:32:18,257: INFO: main: *******************]
+[2025-12-21 16:32:18,257: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 16:32:18,259: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 16:32:18,260: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 16:32:18,260: INFO: common: created directory at: artifacts]
+[2025-12-21 16:32:18,261: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 16:32:43,438: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 16:32:43,578: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 16:42:09,938: INFO: font_manager: generated new fontManager]
+[2025-12-21 16:42:11,131: INFO: server: Started server process [25696]]
+[2025-12-21 16:42:11,132: INFO: on: Waiting for application startup.]
+[2025-12-21 16:42:11,133: INFO: on: Application startup complete.]
+[2025-12-21 16:42:11,133: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 16:52:22,408: INFO: server: Shutting down]
+[2025-12-21 16:52:22,509: INFO: on: Waiting for application shutdown.]
+[2025-12-21 16:52:22,510: INFO: on: Application shutdown complete.]
+[2025-12-21 16:52:22,510: INFO: server: Finished server process [25696]]
+[2025-12-21 16:52:35,501: ERROR: utils: Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+]
+[2025-12-21 16:54:19,241: INFO: server: Started server process [22680]]
+[2025-12-21 16:54:19,242: INFO: on: Waiting for application startup.]
+[2025-12-21 16:54:19,242: INFO: on: Application startup complete.]
+[2025-12-21 16:54:19,243: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 16:55:41,439: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\Desktop\AI\Text-Summarization-NLP-Project\app.py", line 17, in home
+    return templates.TemplateResponse("index.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\templating.py", line 97, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\templating.py", line 84, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2025-12-21 16:58:58,879: INFO: server: Shutting down]
+[2025-12-21 17:02:28,203: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 17:02:34,761: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 17:02:35,527: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 17:02:35,529: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:02:35,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:02:35,530: INFO: common: created directory at: artifacts]
+[2025-12-21 17:02:35,531: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 17:02:35,531: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 17:02:35,649: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:02:35,649: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 17:02:35,651: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:02:35,653: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:02:35,653: INFO: common: created directory at: artifacts]
+[2025-12-21 17:02:35,654: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 17:02:35,655: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:02:35,655: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 17:02:35,658: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:02:35,659: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:02:35,659: INFO: common: created directory at: artifacts]
+[2025-12-21 17:02:35,660: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 17:02:37,328: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:02:37,329: INFO: main: *******************]
+[2025-12-21 17:02:37,329: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 17:02:37,331: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:02:37,332: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:02:37,332: INFO: common: created directory at: artifacts]
+[2025-12-21 17:02:37,332: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 17:02:37,332: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:02:37,333: INFO: main: *******************]
+[2025-12-21 17:02:37,333: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 17:02:37,334: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:02:37,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:02:37,336: INFO: common: created directory at: artifacts]
+[2025-12-21 17:02:37,336: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:02:40,555: INFO: server: Finished server process [22680]]
+[2025-12-21 17:02:40,578: ERROR: on: Traceback (most recent call last):
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\starlette\routing.py", line 638, in lifespan
+    await receive()
+  File "C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+]
+[2025-12-21 17:03:06,116: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 17:03:06,238: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:03:23,206: INFO: server: Started server process [26372]]
+[2025-12-21 17:03:23,207: INFO: on: Waiting for application startup.]
+[2025-12-21 17:03:23,208: INFO: on: Application startup complete.]
+[2025-12-21 17:03:23,209: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 17:05:40,289: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:05:40,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:05:40,291: INFO: common: created directory at: artifacts]
+[2025-12-21 17:05:40,292: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:05:43,581: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 17:09:19,136: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:09:19,138: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:09:19,139: INFO: common: created directory at: artifacts]
+[2025-12-21 17:09:19,139: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:10:12,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:10:12,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:10:12,994: INFO: common: created directory at: artifacts]
+[2025-12-21 17:10:12,994: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:18:24,303: INFO: server: Shutting down]
+[2025-12-21 17:18:24,404: INFO: on: Waiting for application shutdown.]
+[2025-12-21 17:18:24,405: INFO: on: Application shutdown complete.]
+[2025-12-21 17:18:24,405: INFO: server: Finished server process [26372]]
+[2025-12-21 17:18:40,527: INFO: server: Started server process [27376]]
+[2025-12-21 17:18:40,528: INFO: on: Waiting for application startup.]
+[2025-12-21 17:18:40,528: INFO: on: Application startup complete.]
+[2025-12-21 17:18:40,529: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 17:18:49,821: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:18:49,823: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:18:49,823: INFO: common: created directory at: artifacts]
+[2025-12-21 17:18:49,824: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:18:52,833: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 17:19:06,630: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:19:06,631: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:19:06,632: INFO: common: created directory at: artifacts]
+[2025-12-21 17:19:06,632: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:20:26,840: INFO: server: Shutting down]
+[2025-12-21 17:20:26,942: INFO: on: Waiting for application shutdown.]
+[2025-12-21 17:20:26,943: INFO: on: Application shutdown complete.]
+[2025-12-21 17:20:26,943: INFO: server: Finished server process [27376]]
+[2025-12-21 17:24:33,775: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 17:24:40,779: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 17:24:41,537: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 17:24:41,540: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:24:41,542: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:24:41,542: INFO: common: created directory at: artifacts]
+[2025-12-21 17:24:41,542: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 17:24:41,543: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 17:24:41,646: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:24:41,646: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 17:24:41,648: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:24:41,649: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:24:41,649: INFO: common: created directory at: artifacts]
+[2025-12-21 17:24:41,650: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 17:24:41,651: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:24:41,651: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 17:24:41,654: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:24:41,655: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:24:41,656: INFO: common: created directory at: artifacts]
+[2025-12-21 17:24:41,656: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 17:24:43,861: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:24:43,861: INFO: main: *******************]
+[2025-12-21 17:24:43,862: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 17:24:43,864: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:24:43,865: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:24:43,866: INFO: common: created directory at: artifacts]
+[2025-12-21 17:24:43,867: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 17:24:43,867: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 17:24:43,867: INFO: main: *******************]
+[2025-12-21 17:24:43,867: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 17:24:43,869: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 17:24:43,871: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 17:24:43,872: INFO: common: created directory at: artifacts]
+[2025-12-21 17:24:43,873: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 17:25:11,079: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 17:25:11,210: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:08:55,489: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 18:09:04,472: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 18:09:05,316: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 18:09:05,319: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:09:05,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:09:05,320: INFO: common: created directory at: artifacts]
+[2025-12-21 18:09:05,321: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 18:09:05,321: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 18:09:05,417: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:09:05,418: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 18:09:05,419: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:09:05,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:09:05,420: INFO: common: created directory at: artifacts]
+[2025-12-21 18:09:05,420: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 18:09:05,422: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:09:05,422: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 18:09:05,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:09:05,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:09:05,425: INFO: common: created directory at: artifacts]
+[2025-12-21 18:09:05,425: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 18:09:08,130: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:09:08,131: INFO: main: *******************]
+[2025-12-21 18:09:08,131: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 18:09:08,133: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:09:08,134: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:09:08,135: INFO: common: created directory at: artifacts]
+[2025-12-21 18:09:08,135: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 18:09:08,135: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:09:08,135: INFO: main: *******************]
+[2025-12-21 18:09:08,136: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 18:09:08,138: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:09:08,139: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:09:08,139: INFO: common: created directory at: artifacts]
+[2025-12-21 18:09:08,139: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 18:09:36,435: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 18:09:36,555: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:19:53,602: INFO: server: Started server process [13288]]
+[2025-12-21 18:19:53,603: INFO: on: Waiting for application startup.]
+[2025-12-21 18:19:53,604: INFO: on: Application startup complete.]
+[2025-12-21 18:19:53,605: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 18:20:16,966: INFO: server: Shutting down]
+[2025-12-21 18:24:22,442: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 18:24:35,707: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 18:24:36,577: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 18:24:36,580: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:24:36,581: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:24:36,581: INFO: common: created directory at: artifacts]
+[2025-12-21 18:24:36,582: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 18:24:36,582: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 18:24:36,713: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:24:36,713: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 18:24:36,715: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:24:36,716: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:24:36,717: INFO: common: created directory at: artifacts]
+[2025-12-21 18:24:36,717: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 18:24:36,718: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:24:36,719: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 18:24:36,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:24:36,722: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:24:36,722: INFO: common: created directory at: artifacts]
+[2025-12-21 18:24:36,723: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 18:24:38,714: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:24:38,714: INFO: main: *******************]
+[2025-12-21 18:24:38,714: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 18:24:38,716: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:24:38,717: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:24:38,718: INFO: common: created directory at: artifacts]
+[2025-12-21 18:24:38,718: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 18:24:38,718: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:24:38,718: INFO: main: *******************]
+[2025-12-21 18:24:38,718: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 18:24:38,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:24:38,721: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:24:38,721: INFO: common: created directory at: artifacts]
+[2025-12-21 18:24:38,722: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 18:25:07,638: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 18:25:07,751: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:26:00,861: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-21 18:26:08,978: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 18:26:09,680: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-21 18:26:09,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:26:09,683: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:26:09,684: INFO: common: created directory at: artifacts]
+[2025-12-21 18:26:09,684: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-21 18:26:09,684: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-21 18:26:09,809: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:26:09,809: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-21 18:26:09,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:26:09,813: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:26:09,813: INFO: common: created directory at: artifacts]
+[2025-12-21 18:26:09,814: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-21 18:26:09,816: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:26:09,816: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-21 18:26:09,818: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:26:09,819: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:26:09,820: INFO: common: created directory at: artifacts]
+[2025-12-21 18:26:09,820: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-21 18:26:11,884: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:26:11,884: INFO: main: *******************]
+[2025-12-21 18:26:11,884: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-21 18:26:11,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:26:11,887: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:26:11,887: INFO: common: created directory at: artifacts]
+[2025-12-21 18:26:11,888: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-21 18:26:11,888: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:26:11,888: INFO: main: *******************]
+[2025-12-21 18:26:11,888: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-21 18:26:11,890: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:26:11,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:26:11,892: INFO: common: created directory at: artifacts]
+[2025-12-21 18:26:11,892: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 18:26:37,334: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-21 18:26:37,449: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-21 18:27:27,289: INFO: server: Started server process [18360]]
+[2025-12-21 18:27:27,290: INFO: on: Waiting for application startup.]
+[2025-12-21 18:27:27,291: INFO: on: Application startup complete.]
+[2025-12-21 18:27:27,292: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-21 18:28:18,945: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-21 18:28:18,949: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-21 18:28:18,950: INFO: common: created directory at: artifacts]
+[2025-12-21 18:28:18,951: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-21 18:28:26,055: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-21 18:29:43,914: INFO: server: Shutting down]
+[2025-12-21 18:29:44,015: INFO: on: Waiting for application shutdown.]
+[2025-12-21 18:29:44,016: INFO: on: Application shutdown complete.]
+[2025-12-21 18:29:44,016: INFO: server: Finished server process [18360]]
+[2025-12-22 12:04:44,736: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-22 12:04:56,938: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-22 12:04:57,774: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-22 12:04:57,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:04:57,778: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:04:57,779: INFO: common: created directory at: artifacts]
+[2025-12-22 12:04:57,779: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-22 12:04:57,780: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-22 12:04:57,879: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-22 12:04:57,879: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-22 12:04:57,881: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:04:57,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:04:57,882: INFO: common: created directory at: artifacts]
+[2025-12-22 12:04:57,883: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-22 12:04:57,884: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 12:04:57,884: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-22 12:04:57,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:04:57,887: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:04:57,887: INFO: common: created directory at: artifacts]
+[2025-12-22 12:04:57,887: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-22 12:05:00,342: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 12:05:00,342: INFO: main: *******************]
+[2025-12-22 12:05:00,342: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-22 12:05:00,344: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:05:00,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:05:00,345: INFO: common: created directory at: artifacts]
+[2025-12-22 12:05:00,346: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-22 12:05:00,346: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-22 12:05:00,346: INFO: main: *******************]
+[2025-12-22 12:05:00,346: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-22 12:05:00,347: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:05:00,348: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:05:00,349: INFO: common: created directory at: artifacts]
+[2025-12-22 12:05:00,349: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 12:05:28,824: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-22 12:05:28,940: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 12:06:06,392: INFO: server: Started server process [2928]]
+[2025-12-22 12:06:06,392: INFO: on: Waiting for application startup.]
+[2025-12-22 12:06:06,393: INFO: on: Application startup complete.]
+[2025-12-22 12:06:06,394: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-22 12:07:18,321: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:07:18,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:07:18,322: INFO: common: created directory at: artifacts]
+[2025-12-22 12:07:18,323: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 12:07:20,954: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-22 12:08:39,283: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:08:39,285: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:08:39,286: INFO: common: created directory at: artifacts]
+[2025-12-22 12:08:39,286: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 12:09:36,406: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 12:09:36,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 12:09:36,408: INFO: common: created directory at: artifacts]
+[2025-12-22 12:09:36,408: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 12:15:31,636: INFO: server: Shutting down]
+[2025-12-22 12:15:31,739: INFO: on: Waiting for application shutdown.]
+[2025-12-22 12:15:31,742: INFO: on: Application shutdown complete.]
+[2025-12-22 12:15:31,743: INFO: server: Finished server process [2928]]
+[2025-12-22 16:23:27,048: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-22 16:23:39,031: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-22 16:23:39,795: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-22 16:23:39,809: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:23:39,810: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:23:39,810: INFO: common: created directory at: artifacts]
+[2025-12-22 16:23:39,811: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-22 16:23:39,811: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-22 16:23:39,912: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:23:39,912: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-22 16:23:39,914: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:23:39,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:23:39,916: INFO: common: created directory at: artifacts]
+[2025-12-22 16:23:39,916: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-22 16:23:39,917: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:23:39,918: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-22 16:23:39,920: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:23:39,921: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:23:39,921: INFO: common: created directory at: artifacts]
+[2025-12-22 16:23:39,921: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-22 16:23:45,537: WARNING: _http: '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11002] getaddrinfo failed)"))'), '(Request ID: 9540490c-1278-475c-a7ae-5f1d0e57fc52)')' thrown while requesting HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json]
+[2025-12-22 16:23:45,537: WARNING: _http: Retrying in 1s [Retry 1/5].]
+[2025-12-22 16:23:46,539: WARNING: _http: '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 6e7ad92c-9c2a-43de-8822-d4aa314178e8)')' thrown while requesting HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json]
+[2025-12-22 16:23:46,539: WARNING: _http: Retrying in 2s [Retry 2/5].]
+[2025-12-22 16:23:48,542: WARNING: _http: '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 53b4709e-2e84-43bd-b74e-da89b623d8d0)')' thrown while requesting HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json]
+[2025-12-22 16:23:48,542: WARNING: _http: Retrying in 4s [Retry 3/5].]
+[2025-12-22 16:23:56,452: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:23:56,452: INFO: main: *******************]
+[2025-12-22 16:23:56,452: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-22 16:23:56,454: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:23:56,455: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:23:56,455: INFO: common: created directory at: artifacts]
+[2025-12-22 16:23:56,455: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-22 16:23:56,456: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:23:56,456: INFO: main: *******************]
+[2025-12-22 16:23:56,456: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-22 16:23:56,457: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:23:56,458: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:23:56,459: INFO: common: created directory at: artifacts]
+[2025-12-22 16:23:56,459: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 16:24:25,094: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-22 16:24:25,209: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:45:11,626: INFO: config: TensorFlow version 2.20.0 available.]
+[2025-12-22 16:45:26,631: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-22 16:45:29,110: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-22 16:45:29,115: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:45:29,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:45:29,120: INFO: common: created directory at: artifacts]
+[2025-12-22 16:45:29,123: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-22 16:45:29,124: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-12-22 16:45:29,342: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:45:29,342: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-12-22 16:45:29,346: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:45:29,349: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:45:29,350: INFO: common: created directory at: artifacts]
+[2025-12-22 16:45:29,351: INFO: common: created directory at: artifacts/data_validation]
+[2025-12-22 16:45:29,356: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:45:29,357: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-12-22 16:45:29,363: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:45:29,367: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:45:29,367: INFO: common: created directory at: artifacts]
+[2025-12-22 16:45:29,368: INFO: common: created directory at: artifacts/data_transformation]
+[2025-12-22 16:45:32,848: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:45:32,849: INFO: main: *******************]
+[2025-12-22 16:45:32,849: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-12-22 16:45:32,855: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:45:32,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:45:32,858: INFO: common: created directory at: artifacts]
+[2025-12-22 16:45:32,859: INFO: common: created directory at: artifacts/model_trainer]
+[2025-12-22 16:45:32,860: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:45:32,861: INFO: main: *******************]
+[2025-12-22 16:45:32,861: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-12-22 16:45:32,866: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:45:32,869: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:45:32,871: INFO: common: created directory at: artifacts]
+[2025-12-22 16:45:32,871: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 16:47:13,224: INFO: rouge_scorer: Using default tokenizer.]
+[2025-12-22 16:47:13,529: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-22 16:47:58,373: INFO: server: Started server process [13952]]
+[2025-12-22 16:47:58,375: INFO: on: Waiting for application startup.]
+[2025-12-22 16:47:58,377: INFO: on: Application startup complete.]
+[2025-12-22 16:47:58,378: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-12-22 16:49:31,657: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-22 16:49:31,660: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 16:49:31,661: INFO: common: created directory at: artifacts]
+[2025-12-22 16:49:31,662: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-12-22 16:49:37,911: WARNING: module_wrapper: From C:\Users\Akram\AppData\Roaming\Python\Python313\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2025-12-22 16:54:02,481: INFO: server: Shutting down]
+[2025-12-22 16:54:02,584: INFO: on: Waiting for application shutdown.]
+[2025-12-22 16:54:02,585: INFO: on: Application shutdown complete.]
+[2025-12-22 16:54:02,585: INFO: server: Finished server process [13952]]
